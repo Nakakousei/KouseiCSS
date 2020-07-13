@@ -6,15 +6,54 @@
     </script>
     <style>
         .content{
-            background-color:#FF9900;
-            padding:15px;
+            position: relative;
+            margin:15px;
+            padding:3px;
+            width:1600px;
+            height:900px;
+        }
+        .content_inner{
+            /*z-index:1;*/
+            position: absolute;
+            top: 0;
+            margin-top: 5px;
+            margin-left: 5px;
+            background-color: #bbabab8a;
+            width:100px;
+            height:50px;
+        }
+        .content_text_box{
+            margin-top:8px;
+            margin-left:5px;
+            font-size:80%;
+        }
+        .content_text1{
+            font-size:100%;
+            margin-left: 15%;
+        }
+        .content_image{
+            top: 0;
+            left: 0;
+            margin: auto;
+            background-color: #FF9900;
+            height: 100%;
+
         }
     </style>
 </head>
 <body>
-    <h1>カーソル位置を確認しよう</h1>
-    <div id="content">
-        <h2>ここにmainがありますよ</h2>
+    <h1>写真登録画面</h1>
+    <div id="content" class="content">
+        <img src="./images/grid.png" id="content_image" class="content_image">
+        <div id="content_inner" class="content_inner">
+            <p id="content_text_box" class="content_text_box">
+                X = 
+                <span class="content_text1">0</span>
+                <br>
+                Y = 
+                <span class="content_text1">0</span>
+            </p>
+        </div>
     </div>
 </body>
 </html>

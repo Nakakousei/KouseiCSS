@@ -1,13 +1,24 @@
 
-(function() {
+(function () {
 
     function init() {
-        window.addEventListener("click",function(event){
-            let content =  document.getElementById("content");
-            let cX = event.pageX;
-            let cY = event.pageY;
-            let lect = content.getBoundingClientRect();
-            l
+        let content = document.getElementById("content");
+        let textX = document.getElementsByTagName("span")[0];
+        let textY = document.getElementsByTagName("span")[1];
+
+        content.addEventListener("click", function (event) {
+            let documentX = event.pageX;
+            let documentY = event.pageY;
+            let rect = content.getBoundingClientRect();
+
+            let contentX = rect.left + window.pageXOffset;
+            let contentY = rect.top + window.pageYOffset;
+
+            let cursorX = documentX - contentX;
+            let cursorY = documentY - contentY;
+
+            textX.textContent = cursorX;
+            textY.textContent = cursorY;
         });
     }
 
