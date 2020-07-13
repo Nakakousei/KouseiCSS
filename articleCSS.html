@@ -3,7 +3,81 @@
 <head>
     <title>記事</title>
     <style>
-        
+        .header{
+            padding:30px;
+            border-bottom:2px solid #DDDDDD;
+        }
+        .header_inner{
+            max-width:1230px;
+            padding-right:15px;
+            padding-left:15px;
+            margin-right:auto;
+            margin-left:auto;
+        }
+        .footer{
+            padding:10px;
+            background-color:#FF9900;
+        }
+        .footer_inner{
+            max-width: 1230px;
+            padding-right:15px;
+            padding-left:15px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .footer_under_footer{
+            border-top: #DDDDDD;
+        }
+        .footer_copyright{
+            padding-left:150px;
+            padding-right:150px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .content_has_column{
+            display:flex;
+            justify-content: space-between;
+        }
+        .content_main{
+            flex:1;
+            margin-right: 3.25203%;
+        }
+        .content_side{
+            flex:0 0 260px;
+        }
+
+
+
     </style>
 </head>
+<body>
+    <header class="header">
+        <div class="header_inner">
+            <h2 class="level2_heading">このすば</h2>
+        </div>
+    </header>
+    <div class="content content_has_column">
+        <main class="content_main">
+            <article>
+                <h2 class="level2_heading">Linkedin BtoBマーケティング必須ガイド</h2>
+            </article>
+        </main>
+        <aside class="content_side">
+            <h2 class="level4_heading">最近の注目記事</h2>
+            <p>asdlkfjas;dkfja;dskfja;sdlkfaj;sdlkfja;sdlkjf;asldkjfa;sdlkf;asdlkj</p>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer_inner">
+
+            </div>
+        </div>
+        <div class="footer footer_under_footer">
+            <div class="footer_inner">
+                <small class="footer_copyright">DCON_IN_Japan.Inc</small>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
